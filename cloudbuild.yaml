@@ -3,6 +3,5 @@ steps:
   args:
   - init
 - name: hashicorp/terraform
-  args:
-  - apply
-  - -auto-approve
+  args: ['apply', '-auto-approve',
+         '-var','project=${PROJECT_ID}']
